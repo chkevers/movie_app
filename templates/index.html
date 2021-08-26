@@ -1,18 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    {{ js_resources|indent(4)|safe }}
-    {{ css_resources|indent(4)|safe }}
-    {{ plot_script|indent(4)|safe }}
-</head>
-<body>
-    <h1 style="text-align: center; margin-bottom: 40px;">Flask + Bokeh + EasyBase.io</h1>
-    <div style="display: flex; justify-content: center;">
-        {{ plot_div|indent(4)|safe }}
+{% extends 'base.html' %}
+
+{% block head %} 
+{% endblock %}
+<title>Home</title>
+{% block body %}
+ <br>
+ <br>
+ <h1>This app is getting nicer</h1>
+ <br>
+ <br>
+ <div>
+    <div class="bg-light p-5 rounded">
+      <div class="col-sm-8 mx-auto">
+        <h1>Quick Introduction to what we will do</h1>
+        <p>Enjoy the first nice webpage.</p>
+        <p>Step-by-step, it will become legendary!</p>
+        <p>
+          <a class="btn btn-primary" href="/choice" role="button">Search for a movie &raquo;</a>
+        </p>
+      </div>
     </div>
-</body>
-</html>
+  </div>
+</div>
+{% endblock %}
